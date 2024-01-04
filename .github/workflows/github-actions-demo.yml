@@ -1,0 +1,10 @@
+name: Run Makefile
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run make say-hello
+      run: make say-hello
